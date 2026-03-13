@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F5F9"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <!-- HEADER -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#3B82F6"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kalkulator Bangun"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Datar Ruang"
+                android:textColor="#E0F2FE"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+
+        <!-- CARD SEGITIGA -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Luas Segitiga"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#1E293B"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:id="@+id/inputAlas"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Masukkan Alas"
+                    android:padding="10dp"
+                    android:inputType="numberDecimal"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/inputTinggi"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Masukkan Tinggi"
+                    android:padding="10dp"
+                    android:inputType="numberDecimal"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/btnHitungSegitiga"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Hitung Luas"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#2563EB"/>
+
+                <TextView
+                    android:id="@+id/hasilSegitiga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hasil:"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- CARD KUBUS -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Volume Kubus"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#1E293B"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:id="@+id/inputSisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Masukkan Sisi"
+                    android:padding="10dp"
+                    android:inputType="numberDecimal"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/btnHitungKubus"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Hitung Volume"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#10B981"/>
+
+                <TextView
+                    android:id="@+id/hasilKubus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hasil:"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
